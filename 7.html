@@ -1,0 +1,33 @@
+<html>
+	<head>
+	</head>
+	<body>
+	
+	7. Write a JavaScript to validate textbox to accept only text values.
+	<br>
+		Enter name:<input type="text" id="name">
+		<br>
+		
+		<button onclick="my()">click me!</button>
+		<br>
+		
+		<input type="text" id="r">
+		
+		<script>
+				function my()
+				{
+					var name=document.getElementById("name").value;
+					var ptn=/^[a-zA-Z]+$/;
+					
+					if(!(ptn.test(name)))
+					{
+						alert("please enter alphabet");
+					}
+					else
+					{
+					document.getElementById("r").value=name;
+					}
+				}
+		</script>
+	</body>
+</html>

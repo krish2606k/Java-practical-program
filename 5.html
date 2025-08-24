@@ -1,0 +1,60 @@
+<html>
+	<head>
+	</head>
+	<body>
+	
+	5. Write a JavaScript to make a calculator for 
+		addition, subtraction, multiplication 
+		and division of 2 numbers.
+		<br>
+		Enter first number:<input type="text" id="n1">
+		<br>
+		<br>
+		Enter second number:<input type="text" id="n2">
+		<br>
+		<br>
+		<button onclick="add()">add</button>
+		<button onclick="sub()">sub</button>
+		<button onclick="mul()">mul</button>
+		<button onclick="div()">div</button>
+		<input type="text" id="total">
+		
+		<script>
+			function add()
+			{
+				var num1=parseInt(document.getElementById("n1").value);
+				var num2=parseInt(document.getElementById("n2").value);
+			
+				var add=num1+num2;
+				document.getElementById("total").value=add;
+			}
+			
+			function sub()
+			{
+				var num1=parseInt(document.getElementById("n1").value);
+				var num2=parseInt(document.getElementById("n2").value);
+			
+				var sub=num1-num2;
+				document.getElementById("total").value=sub;
+			}
+			
+			function mul()
+			{
+				var num1=parseInt(document.getElementById("n1").value);
+				var num2=parseInt(document.getElementById("n2").value);
+			
+				var mul=num1*num2;
+				document.getElementById("total").value=mul;
+			}
+			
+			function div()
+			{
+				var num1=parseInt(document.getElementById("n1").value);
+				var num2=parseInt(document.getElementById("n2").value);
+			
+				var div=num1/num2;
+				document.getElementById("total").value=div;
+			}
+		</script>
+	</body>
+</html>

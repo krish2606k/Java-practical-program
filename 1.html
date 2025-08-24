@@ -1,0 +1,31 @@
+<html>
+	<head>
+	</head>
+	<body>
+	
+	1. Write a JavaScript to print your name and surname on screen.
+	<br>
+		Enter Name:<input type="text" id="n">
+		<br>
+		<br>
+		Enter Surname:<input type="text" id="s">
+		<br>
+		<br>
+		<button onclick="ne()">click me!</button>
+		
+		<p id="pp"></p>
+		
+		<script>
+			function ne()
+			{
+				var name=document.getElementById("n").value;
+				var surname=document.getElementById("s").value;
+				
+				var ans=name+" "+surname;
+				
+				document.getElementById("pp").innerHTML=ans;
+				document.getElementById("pp").value=ans;
+			}
+		</script>
+	</body>
+</html>

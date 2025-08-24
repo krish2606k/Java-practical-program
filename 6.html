@@ -1,0 +1,30 @@
+<html>
+	<head>
+	</head>
+	<body>
+	
+	6. Write a JavaScript to find reverse of given String.
+	<br>
+		Enter name:<input type="text" id="n">
+		<br>
+		
+		<button onclick="my()">click me!</button>
+		<br>
+		
+		<p id="r"></p>
+		
+		<script>
+				function my()
+				{
+					var s=document.getElementById("n").value;
+					var rs="",l=s.length;
+					
+					for(let i=l-1;i>=0;i--)
+					{
+						rs+=s[i];
+					}
+					document.getElementById("r").innerHTML=rs;
+				}
+		</script>
+	</body>
+</html>

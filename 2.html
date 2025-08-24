@@ -1,0 +1,36 @@
+<html>
+	<head>
+	</head>
+	<body>
+	
+	2. Write a JavaScript to find sum of three numbers entered by user.
+	<br>
+		Enter first Number:<input type="text" id="n1">
+		<br>
+		<br>
+		Enter second Number:<input type="text" id="n2">
+		<br>
+		<br>
+		Enter therod Number:<input type="text" id="n3">
+		<br>
+		<br>
+		<button onclick="ne()">Addition of the three Number</button>
+		
+		<input type="text" id="add">
+		
+		<script>
+			function ne()
+			{
+				var first=parseInt(document.getElementById("n1").value);
+				var second=parseInt(document.getElementById("n2").value);
+				var therod=parseInt(document.getElementById("n3").value);
+				
+				var ans=first+second+therod;
+				
+				document.getElementById("add").innerHTML=ans;
+				document.getElementById("add").value=ans;
+				document.getElementById("add").value=ans;
+			}
+		</script>
+	</body>
+</html>

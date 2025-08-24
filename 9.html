@@ -1,0 +1,38 @@
+<html>
+	<head>
+	</head>
+	<body>
+	
+	9. Write a JavaScript to validate a contact 
+		no to accept only numbers with size 10.
+	<br><br><br>
+		Enter phone number:<input type="text" id="n">
+		<br>
+		
+		<button onclick="my()">click me!</button>
+		<br>
+		
+		<input type="text" id="r">
+	
+		<script>
+			function my()
+			{
+				var number=document.getElementById("n").value;
+				
+				if(isNaN(number))
+				{
+					alert("please enter only number");
+				}
+				else if(number.length!=10)
+				{
+					alert("please enter 10 number");
+				}
+				else
+				{
+					document.getElementById("r").value=number;
+				
+				}
+			}
+		</script>
+	</body>
+</html>

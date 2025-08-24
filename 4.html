@@ -1,0 +1,30 @@
+<html>
+	<head>
+	</head>
+	<body>
+	
+	4.Write a JavaScript to find sum of N numbers entered by user.
+		<br>
+	Enter number:<input type="text" id="n">
+		<br>
+		
+		<button onclick="my()">click me!</button>
+		<br>
+		
+		<p id="s"></p>
+		
+		<script>
+				function my()
+				{
+					var num=parseInt(document.getElementById("n").value);
+					var sum=0;
+					
+					for(let i=1;i<=num;i++)
+					{
+						sum+=i;
+					}
+					document.getElementById("s").innerHTML=sum;
+				}
+		</script>
+	</body>
+</html>

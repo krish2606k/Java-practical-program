@@ -1,0 +1,43 @@
+<html>
+	<head>
+	</head>
+	<body>
+	
+	3. Write a JavaScript to make all fields mandatory.
+	<br>
+		Enter Name:<input type="text" id="n">
+		<br>
+		<br>
+		Enter Surname:<input type="text" id="s">
+		<br>
+		<br>
+		Enter Email:<input type="text" id="e">
+		<br>
+		<br>
+		<button onclick="ne()">click me!</button>
+		
+		<h5 id="p1"></h5>
+		<h5 id="p2"></h5>
+		<h5 id="p3"></h5>
+		
+		<script>
+			function ne()
+			{
+				var name=document.getElementById("n").value;
+				var surname=document.getElementById("s").value;
+				var email=document.getElementById("e").value;
+				
+				if(name==""||surname==""||email=="")
+				{
+					alert("plase enter enformation");
+				}
+				else
+				{
+				document.getElementById("p1").innerHTML=name;
+				document.getElementById("p2").innerHTML=surname;
+				document.getElementById("p3").innerHTML=email;
+				}
+			}	
+		</script>
+	</body>
+</html>

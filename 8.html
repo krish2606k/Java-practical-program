@@ -1,0 +1,34 @@
+<html>
+	<head>
+	</head>
+	<body>
+	
+	8. Write a JavaScript to validate email address to entered by the user.
+	<br><br><br>
+		Enter email:<input type="email" id="e">
+		<br>
+		
+		<button onclick="my()">click me!</button>
+		<br>
+		
+		<input type="text" id="s">
+	
+		<script>
+			function my()
+			{
+				var email=document.getElementById("e").value;
+				var ept=/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+				
+				if(!(ept.test(email)))
+				{
+					alert("the given email is incorrect");
+				}
+				else
+				{
+					document.getElementById("s").value=email;
+				
+				}
+			}
+		</script>
+	</body>
+</html>
