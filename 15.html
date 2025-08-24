@@ -1,0 +1,36 @@
+<html>
+	<head>
+	</head>
+	<body>
+	
+	15. Write a JavaScript to find the vowels and 
+		consonant in string entered by user.
+	<br><br><br>
+		Enter charactar:<input type="text" id="c1">
+		<br><br>
+		
+		<button onclick="my()">click me!</button>
+		<br>
+		<br>
+		
+		Vowels:-<input type="text" id="v1"><br><br>
+		consonant:-<input type="text" id="c3">
+	
+		<script>
+			function my()
+			{
+				var char=document.getElementById("c1").value;
+					
+				if(char=="A"||char=="E"||char=="I"||char=="O"||char=="U"||
+					char=="a"||char=="e"||char=="i"||char=="o"||char=="u")
+				{
+					document.getElementById("v1").value=char;
+				}
+				else
+				{
+					document.getElementById("c3").value=char;				
+				}
+			}
+		</script>
+	</body>
+</html>
